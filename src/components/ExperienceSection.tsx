@@ -4,7 +4,7 @@ const ExperienceSection = () => {
     {
       title: "TCS CodeVita",
       role: "Rank #3284",
-      description: "Data Structure + Algorithm Programming Competition",
+      description: "Programming Competition",
       period: "2024",
       icon: "🏆"
     },
@@ -13,7 +13,7 @@ const ExperienceSection = () => {
       title: "Startup Experience",
       role: "Founder & Product Lead",
       description: "Product Design, MVP Development, Pitch Decks, Market Research",
-      period: "2023-Present",
+      period: "2025-Present",
       icon: "💼"
     }
   ];
