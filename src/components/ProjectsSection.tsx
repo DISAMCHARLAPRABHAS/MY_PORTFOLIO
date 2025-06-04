@@ -48,20 +48,20 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-white">
+    <section id="projects" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 dark:text-white mb-6">
               Featured Projects
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-4"></div>
-            <p className="text-xl text-gray-600">Innovative solutions that showcase my technical expertise</p>
+            <p className="text-xl text-gray-600 dark:text-gray-300">Innovative solutions that showcase my technical expertise</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <Card key={project.title} className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden transform hover:-translate-y-2">
+              <Card key={project.title} className="group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg overflow-hidden transform hover:-translate-y-2 dark:bg-gray-800">
                 {/* Project Header with Gradient */}
                 <div className={`h-32 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
                   <div className="absolute inset-0 bg-black/20"></div>
@@ -86,16 +86,16 @@ const ProjectsSection = () => {
                 </div>
 
                 <CardHeader className="pb-4">
-                  <CardTitle className="text-xl font-heading font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                  <CardTitle className="text-xl font-heading font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
                     {project.title}
                   </CardTitle>
-                  <p className="text-gray-600">{project.description}</p>
+                  <p className="text-gray-600 dark:text-gray-300">{project.description}</p>
                 </CardHeader>
 
                 <CardContent className="pt-0">
                   <div className="space-y-3 mb-6">
                     {project.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center text-sm text-gray-700">
+                      <div key={idx} className="flex items-center text-sm text-gray-700 dark:text-gray-300">
                         <ArrowRight className="h-4 w-4 text-blue-500 mr-2 flex-shrink-0" />
                         {feature}
                       </div>
@@ -117,7 +117,7 @@ const ProjectsSection = () => {
                     <Button 
                       size="sm" 
                       variant="outline"
-                      className="border-gray-300 hover:border-gray-400 flex-1 group-hover:shadow-md transition-all duration-300"
+                      className="border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 flex-1 group-hover:shadow-md transition-all duration-300 dark:bg-gray-700 dark:text-gray-300"
                     >
                       <Github className="mr-2 h-4 w-4" />
                       Code

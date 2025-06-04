@@ -6,10 +6,12 @@ import ProjectsSection from "@/components/ProjectsSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <ThemeToggle />
       <HeroSection />
       <AboutSection />
       <SkillsSection />

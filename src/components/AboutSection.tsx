@@ -22,16 +22,16 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 dark:text-white mb-6">
               About Me
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-4"></div>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Passionate about leveraging technology to solve real-world problems and create meaningful impact.
             </p>
           </div>
@@ -40,22 +40,22 @@ const AboutSection = () => {
             {/* Bio Content */}
             <div className="space-y-6">
               <div className="prose prose-lg">
-                <p className="text-gray-700 leading-relaxed text-lg">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
                   I'm an ambitious entrepreneur and tech enthusiast with a passion for building innovative solutions. 
                   Currently pursuing Electronics & Communication Engineering while simultaneously building my startup, 
                   Synapse Hub - an AI-powered commerce platform.
                 </p>
-                <p className="text-gray-700 leading-relaxed text-lg">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
                   My journey spans from data science and machine learning to product development and startup strategy. 
                   I believe in the power of technology to transform businesses and improve lives.
                 </p>
               </div>
 
               {/* Fun Fact Quote */}
-              <Card className="bg-gradient-to-r from-blue-50 to-purple-50 border-0 shadow-lg">
+              <Card className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 border-0 shadow-lg">
                 <CardContent className="p-6">
                   <Quote className="h-8 w-8 text-blue-600 mb-4" />
-                  <blockquote className="text-xl font-medium text-gray-800 italic">
+                  <blockquote className="text-xl font-medium text-gray-800 dark:text-gray-200 italic">
                     "Building the future, one innovative idea at a time."
                   </blockquote>
                 </CardContent>
@@ -65,7 +65,7 @@ const AboutSection = () => {
             {/* Highlights */}
             <div className="space-y-6">
               {highlights.map((item, index) => (
-                <Card key={item.title} className="group hover:shadow-lg transition-all duration-300 border-0 shadow-md">
+                <Card key={item.title} className="group hover:shadow-lg transition-all duration-300 border-0 shadow-md dark:bg-gray-800">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
                       <div className="flex-shrink-0">
@@ -74,10 +74,10 @@ const AboutSection = () => {
                         </div>
                       </div>
                       <div className="flex-1">
-                        <h3 className="font-heading font-bold text-gray-900 text-lg mb-2">
+                        <h3 className="font-heading font-bold text-gray-900 dark:text-white text-lg mb-2">
                           {item.title}
                         </h3>
-                        <p className="text-gray-600">
+                        <p className="text-gray-600 dark:text-gray-300">
                           {item.description}
                         </p>
                       </div>
