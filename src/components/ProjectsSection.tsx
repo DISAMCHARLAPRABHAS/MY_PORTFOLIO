@@ -43,7 +43,7 @@ const ProjectsSection = () => {
       ],
       status: "Completed",
       tech: ["Python", "Pandas", "Matplotlib"],
-      gradient: "from-orange-500 to-red-600"
+      gradient: "from-orange-500 to-red-600",
       link: "https://github.com/DISAMCHARLAPRABHAS/IPL_Visualization.git"
     }
   ];
