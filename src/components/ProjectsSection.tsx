@@ -9,7 +9,7 @@ const ProjectsSection = () => {
       title: "Synapse Hub",
       description: "All-in-one AI commerce & booking platform",
       features: [
-        "Fast delivery from Kashmir to Kanyakumari",
+        "Fast delivery for small towns and villages within 24 hrs",
         "Group buying & livestream shopping",
         "AI-powered recommendations",
         "Real-time order tracking"
@@ -28,7 +28,7 @@ const ProjectsSection = () => {
         "Edge Impulse integration",
         "Raspberry Pi powered"
       ],
-      status: "In Development",
+      status: "completed",
       tech: ["IoT", "AI", "Edge Computing"],
       gradient: "from-green-500 to-teal-600"
     },
