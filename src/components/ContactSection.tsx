@@ -49,8 +49,6 @@ const ContactSection = () => {
       url: "#",
       icon: Youtube,
       color: "hover:text-red-600"
-      onClick: () => alert("Sorry, we don’t have YouTube yet!")
-
     }
   ];
 
