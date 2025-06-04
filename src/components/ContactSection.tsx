@@ -30,7 +30,7 @@ const ContactSection = () => {
       name: "Email",
       url: "mailto:prabhasnaidu863@gmail.com",
       icon: Mail,
-      color: "hover:text-red-500"
+      color: "hover:text-orange-500"
     },
     {
       name: "LinkedIn",
@@ -49,6 +49,8 @@ const ContactSection = () => {
       url: "#",
       icon: Youtube,
       color: "hover:text-red-600"
+      onClick: () => alert("Sorry, we don’t have YouTube yet!")
+
     }
   ];
 
