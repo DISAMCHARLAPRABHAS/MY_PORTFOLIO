@@ -29,7 +29,8 @@ const HeroSection = () => {
               Hi, I'm <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Prabhas Naidu</span>
             </h1>
             <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 font-medium mb-4">
-              AI Builder | Startup Founder | Data Science Enthusiast
+              Turning Ideas into AI | Living Data | Breathing Innovation
+              
             </h2>
             <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
               Turning innovative ideas into powerful digital products that make a difference.
