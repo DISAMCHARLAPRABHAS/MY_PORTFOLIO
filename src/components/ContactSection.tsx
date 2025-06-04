@@ -34,13 +34,13 @@ const ContactSection = () => {
     },
     {
       name: "LinkedIn",
-      url: "#",
+      url: "https://www.linkedin.com/in/prabhas-disamcharla-60a14b284/",
       icon: Linkedin,
       color: "hover:text-blue-600"
     },
     {
       name: "GitHub",
-      url: "#",
+      url: "https://github.com/DISAMCHARLAPRABHAS",
       icon: Github,
       color: "hover:text-gray-800"
     },

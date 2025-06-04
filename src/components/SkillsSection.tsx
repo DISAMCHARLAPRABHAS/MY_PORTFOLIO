@@ -1,18 +1,19 @@
 
 import { Card, CardContent } from "@/components/ui/card";
+import { Code, Database, BarChart3, Zap, Settings, Monitor, FileText, Globe } from "lucide-react";
 
 const SkillsSection = () => {
   const techStack = [
-    { name: "Python", category: "Programming" },
-    { name: "SQL", category: "Database" },
-    { name: "Pandas", category: "Data Science" },
-    { name: "NumPy", category: "Data Science" },
-    { name: "Bubble.io", category: "No-Code" },
-    { name: "Rapid API", category: "API" },
-    { name: "VS Code", category: "Tools" },
-    { name: "Jupyter Notebook", category: "Tools" },
-    { name: "Google Colab", category: "Tools" },
-    { name: "Tableau", category: "Visualization" }
+    { name: "Python", category: "Programming", icon: Code },
+    { name: "SQL", category: "Database", icon: Database },
+    { name: "Pandas", category: "Data Science", icon: BarChart3 },
+    { name: "NumPy", category: "Data Science", icon: BarChart3 },
+    { name: "Bubble.io", category: "No-Code", icon: Zap },
+    { name: "Rapid API", category: "API", icon: Globe },
+    { name: "VS Code", category: "Tools", icon: Settings },
+    { name: "Jupyter Notebook", category: "Tools", icon: FileText },
+    { name: "Google Colab", category: "Tools", icon: Monitor },
+    { name: "Tableau", category: "Visualization", icon: BarChart3 }
   ];
 
   const softSkills = [
@@ -56,7 +57,11 @@ const SkillsSection = () => {
                 {techStack.map((skill) => (
                   <Card key={skill.name} className="group hover:shadow-lg transition-all duration-300 border-0 shadow-sm overflow-hidden">
                     <CardContent className="p-4 text-center">
-                      <div className={`w-full h-2 bg-gradient-to-r ${categoryColors[skill.category]} rounded-full mb-3 transform group-hover:scale-105 transition-transform duration-300`}></div>
+                      <div className="flex justify-center mb-3">
+                        <div className={`w-12 h-12 bg-gradient-to-r ${categoryColors[skill.category]} rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                          <skill.icon className="h-6 w-6 text-white" />
+                        </div>
+                      </div>
                       <h4 className="font-semibold text-gray-900 mb-1">{skill.name}</h4>
                       <p className="text-xs text-gray-500 uppercase tracking-wide">{skill.category}</p>
                     </CardContent>
