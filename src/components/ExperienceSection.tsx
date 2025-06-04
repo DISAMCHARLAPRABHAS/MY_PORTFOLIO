@@ -8,13 +8,7 @@ const ExperienceSection = () => {
       period: "2024",
       icon: "🏆"
     },
-    {
-      title: "Data Science Internship",
-      role: "ML Engineering Intern",
-      description: "10+ sessions on ML models, data preprocessing, and model deployment",
-      period: "2023-2024",
-      icon: "📊"
-    },
+   
     {
       title: "Startup Experience",
       role: "Founder & Product Lead",
