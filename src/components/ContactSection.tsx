@@ -17,11 +17,20 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
+    
+    // Create mailto link with form data
+    const subject = encodeURIComponent(`Portfolio Contact: Message from ${formData.name}`);
+    const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`);
+    const mailtoLink = `mailto:prabhasnaidu863@gmail.com?subject=${subject}&body=${body}`;
+    
+    // Open default email client
+    window.location.href = mailtoLink;
+    
     toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon!",
+      title: "Opening Email Client",
+      description: "Your default email client will open with the pre-filled message.",
     });
+    
     setFormData({ name: '', email: '', message: '' });
   };
 
