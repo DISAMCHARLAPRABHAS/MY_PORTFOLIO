@@ -44,7 +44,7 @@ const ProjectsSection = () => {
       status: "Completed",
       tech: ["Python", "Pandas", "Matplotlib"],
       gradient: "from-orange-500 to-red-600",
-      link: "https://github.com/DISAMCHARLAPRABHAS/IPL_Visualization.git"
+      githubUrl: "https://github.com/DISAMCHARLAPRABHAS/IPL_Visualization.git"
     }
   ];
 
@@ -119,6 +119,7 @@ const ProjectsSection = () => {
                       size="sm" 
                       variant="outline"
                       className="border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 flex-1 group-hover:shadow-md transition-all duration-300 dark:bg-gray-700 dark:text-gray-300"
+                      onClick={() => window.open(project.githubUrl || '#', '_blank')}
                     >
                       <Github className="mr-2 h-4 w-4" />
                       Code
