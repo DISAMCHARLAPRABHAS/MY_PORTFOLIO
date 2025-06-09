@@ -15,6 +15,7 @@ const ProjectsSection = () => {
         "Real-time order tracking"
       ],
       liveUrl: "https://synapse-hub-central9898-rn5s.vercel.app/",
+      githubUrl: "https://github.com/DISAMCHARLAPRABHAS/synapse-hub-central9897.git",
       status: "Live",
       tech: ["AI", "Commerce", "Booking"],
       gradient: "from-blue-500 to-purple-600"

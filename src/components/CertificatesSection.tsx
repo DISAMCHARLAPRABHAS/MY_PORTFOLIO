@@ -8,11 +8,13 @@ const CertificatesSection = () => {
     {
       title: "Python 101 for Data Science",
       issuer: "IBM SkillsBuild",
+      issuerLink: "https://skillsbuild.org/",
       link: "https://courses.yl-ptech.skillsnetwork.site/certificates/f88f049bbbc1425a91e6d576f8ca8376"
     },
     {
       title: "Data Science with Python Boot Camp",
       issuer: "Networks Greek",
+      issuerLink: "https://www.networkgeek.in/",
       link: "https://hcti.io/v1/image/b8662777-e3db-4419-86ee-fd11e2c63558"
     }
   ];
@@ -43,7 +45,12 @@ const CertificatesSection = () => {
                           {cert.title}
                         </CardTitle>
                         <p className="text-gray-600 dark:text-gray-300 mt-1">
-                          Issued by <span className="font-semibold text-blue-600 dark:text-blue-400">{cert.issuer}</span>
+                          Issued by <span 
+                            className="font-semibold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
+                            onClick={() => window.open(cert.issuerLink, '_blank')}
+                          >
+                            {cert.issuer}
+                          </span>
                         </p>
                       </div>
                     </div>
