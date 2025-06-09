@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Github, Linkedin, Youtube } from "lucide-react";
+import { Mail, Github, Linkedin, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -54,10 +54,10 @@ const ContactSection = () => {
       color: "hover:text-gray-800"
     },
     {
-      name: "YouTube",
-      url: "#",
-      icon: Youtube,
-      color: "hover:text-red-600"
+      name: "WhatsApp",
+      url: "https://wa.me/918688466004",
+      icon: MessageCircle,
+      color: "hover:text-green-600"
     }
   ];
 
