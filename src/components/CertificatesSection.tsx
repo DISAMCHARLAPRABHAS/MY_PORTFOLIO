@@ -9,6 +9,11 @@ const CertificatesSection = () => {
       title: "Python 101 for Data Science",
       issuer: "IBM SkillsBuild",
       link: "https://courses.yl-ptech.skillsnetwork.site/certificates/f88f049bbbc1425a91e6d576f8ca8376"
+    },
+    {
+      title: "Data Science with Python Boot Camp",
+      issuer: "Networks Greek",
+      link: "https://hcti.io/v1/image/b8662777-e3db-4419-86ee-fd11e2c63558"
     }
   ];
 
