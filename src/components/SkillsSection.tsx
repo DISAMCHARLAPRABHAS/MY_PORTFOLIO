@@ -1,6 +1,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Code, Database, BarChart3, Zap, Monitor, FileText, Globe, Github, Radical, Airplay } from "lucide-react";
+import Floating3DIcon from "@/components/3d/Floating3DIcon";
 
 const SkillsSection = () => {
   const techStack = [
@@ -36,6 +37,16 @@ const SkillsSection = () => {
     "Visualization": "from-pink-500 to-pink-600"
   };
 
+  const category3DColors = {
+    "Programming": "#3b82f6",
+    "Database": "#10b981", 
+    "Data Science": "#8b5cf6",
+    "No-Code": "#f59e0b",
+    "API": "#ef4444",
+    "Tools": "#6366f1",
+    "Visualization": "#ec4899"
+  };
+
   return (
     <section id="skills" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-blue-900 relative overflow-hidden">
       {/* Background Animation Elements */}
@@ -62,7 +73,8 @@ const SkillsSection = () => {
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {techStack.map((skill, index) => (
-                  <Card key={skill.name} className="group hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500 border-0 shadow-sm overflow-hidden dark:bg-gray-800 transform hover:scale-105 hover:-translate-y-2 animate-fade-in-up" style={{animationDelay: `${index * 0.1}s`}}>
+                  <Card key={skill.name} className="group hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500 border-0 shadow-sm overflow-hidden dark:bg-gray-800 transform hover:scale-105 hover:-translate-y-2 animate-fade-in-up relative" style={{animationDelay: `${index * 0.1}s`}}>
+                    <Floating3DIcon color={category3DColors[skill.category]} />
                     <CardContent className="p-4 text-center">
                       <div className="flex justify-center mb-3">
                         <div className={`w-12 h-12 bg-gradient-to-r ${categoryColors[skill.category]} rounded-lg flex items-center justify-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 shadow-lg group-hover:shadow-xl`}>
@@ -82,7 +94,8 @@ const SkillsSection = () => {
               <h3 className="text-2xl font-heading font-bold text-gray-900 dark:text-white mb-6 text-center lg:text-left">
                 Soft Skills
               </h3>
-              <Card className="shadow-xl hover:shadow-2xl border-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 dark:bg-gray-800 transition-all duration-500 hover:scale-105 transform">
+              <Card className="shadow-xl hover:shadow-2xl border-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 dark:bg-gray-800 transition-all duration-500 hover:scale-105 transform relative">
+                <Floating3DIcon color="#8b5cf6" />
                 <CardContent className="p-6">
                   <div className="space-y-4">
                     {softSkills.map((skill, index) => (

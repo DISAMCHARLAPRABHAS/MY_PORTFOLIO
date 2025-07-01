@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -218,6 +217,35 @@ export default {
 						opacity: '1',
 						transform: 'translateY(0)'
 					}
+				},
+				'rotate-3d': {
+					'0%': {
+						transform: 'rotateX(0deg) rotateY(0deg)'
+					},
+					'100%': {
+						transform: 'rotateX(360deg) rotateY(360deg)'
+					}
+				},
+				'float-3d': {
+					'0%, 100%': {
+						transform: 'translateY(0px) rotateX(0deg) rotateZ(0deg)'
+					},
+					'33%': {
+						transform: 'translateY(-10px) rotateX(15deg) rotateZ(5deg)'
+					},
+					'66%': {
+						transform: 'translateY(5px) rotateX(-10deg) rotateZ(-5deg)'
+					}
+				},
+				'neural-pulse': {
+					'0%, 100%': {
+						opacity: '0.3',
+						transform: 'scale(1)'
+					},
+					'50%': {
+						opacity: '0.8',
+						transform: 'scale(1.1)'
+					}
 				}
 			},
 			animation: {
@@ -236,6 +264,9 @@ export default {
 				'gradient-x': 'gradient-x 3s ease infinite',
 				'width-expand': 'width-expand 1s ease-out',
 				'scroll-indicator': 'scroll-indicator 2s ease-in-out infinite',
+				'rotate-3d': 'rotate-3d 20s linear infinite',
+				'float-3d': 'float-3d 4s ease-in-out infinite',
+				'neural-pulse': 'neural-pulse 3s ease-in-out infinite',
 			}
 		}
 	},
