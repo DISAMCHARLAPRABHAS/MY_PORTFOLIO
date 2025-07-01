@@ -1,15 +1,15 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Code, Database, BarChart3, Zap, Settings, Monitor, FileText, Globe,  Github } from "lucide-react";
+import { Code, Database, BarChart3, Zap, Settings, Monitor, FileText, Globe,  Github, Panda,  Radical, Airplay } from "lucide-react";
 
 const SkillsSection = () => {
   const techStack = [
     { name: "Python", category: "Programming", icon: Code },
     { name: "SQL", category: "Database", icon: Database },
-    { name: "Pandas", category: "Data Science", icon: BarChart3 },
-    { name: "NumPy", category: "Data Science", icon: BarChart3 },
+    { name: "Pandas", category: "Data Science", icon: panda },
+    { name: "NumPy", category: "Data Science", icon:  Radical },
     { name: "Bubble.io", category: "No-Code", icon: Zap },
     { name: "Rapid API", category: "API", icon: Globe },
-    { name: "VS Code", category: "Tools", icon: Settings },
+    { name: "VS Code", category: "Tools", icon: Airplay },
     { name: "Jupyter Notebook", category: "Tools", icon: FileText },
     { name: "Google Colab", category: "Tools", icon: Monitor },
     { name: "Git", category: "Tools", icon:  Github },
