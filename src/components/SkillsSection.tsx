@@ -26,6 +26,7 @@ const SkillsSection = () => {
     { name: "VS Code", category: "Tools", icon: SiVisualstudiocode },
     { name: "Jupyter Notebook", category: "Tools", icon: SiJupyter },
     { name: "Google Colab", category: "Tools", icon: SiGooglecolab },
+    { name: "GitHub", category: "Tools", icon: SiGithub }, 
     { name: "Tableau", category: "Visualization", icon: SiTableau }
   ];
 
