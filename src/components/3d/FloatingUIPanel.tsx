@@ -1,7 +1,6 @@
-
 import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Mesh } from 'three';
+import { Mesh, MeshBasicMaterial } from 'three';
 import { Text, RoundedBox } from '@react-three/drei';
 
 interface FloatingUIPanelProps {
@@ -15,8 +14,9 @@ export const FloatingUIPanel = ({ position, rotation, content }: FloatingUIPanel
   const glowRef = useRef<Mesh>(null);
 
   useFrame((state) => {
-    if (glowRef.current) {
-      glowRef.current.material.opacity = 0.3 + Math.sin(state.clock.elapsedTime * 2) * 0.1;
+    if (glowRef.current && glowRef.current.material) {
+      const material = glowRef.current.material as MeshBasicMaterial;
+      material.opacity = 0.3 + Math.sin(state.clock.elapsedTime * 2) * 0.1;
     }
   });
 

@@ -1,7 +1,7 @@
 
 import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Mesh } from 'three';
+import { Mesh, MeshStandardMaterial } from 'three';
 import { RoundedBox } from '@react-three/drei';
 
 interface WorkspaceDeskProps {
@@ -12,9 +12,9 @@ export const WorkspaceDesk = ({ position }: WorkspaceDeskProps) => {
   const laptopScreenRef = useRef<Mesh>(null);
 
   useFrame((state) => {
-    if (laptopScreenRef.current) {
-      laptopScreenRef.current.material.emissiveIntensity = 
-        0.3 + Math.sin(state.clock.elapsedTime * 3) * 0.1;
+    if (laptopScreenRef.current && laptopScreenRef.current.material) {
+      const material = laptopScreenRef.current.material as MeshStandardMaterial;
+      material.emissiveIntensity = 0.3 + Math.sin(state.clock.elapsedTime * 3) * 0.1;
     }
   });
 
