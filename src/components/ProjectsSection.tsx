@@ -21,6 +21,22 @@ const ProjectsSection = () => {
       gradient: "from-blue-500 to-purple-600"
     },
     {
+  title: "Synapse Research",
+  description: "User sentiment intelligence system for e-commerce & booking apps",
+  features: [
+    "Scraped 10,000+ Play Store & Reddit reviews",
+    "Performed sentiment analysis on user feedback",
+    "Summarized insights per app (Amazon, Zepto, Flipkart)",
+    "Structured outputs for dashboards and AI agents"
+  ],
+  
+  githubUrl: "https://github.com/DISAMCHARLAPRABHAS/synapse_research.git",
+  status: "Completed",
+  tech: ["Python", "NLP", "Sentiment Analysis", "Selenium"],
+  gradient: "from-yellow-500 to-rose-600"
+},
+    
+    {
       title: "Smart Basket",
       description: "AI-powered smart shopping basket with IoT integration",
       features: [
