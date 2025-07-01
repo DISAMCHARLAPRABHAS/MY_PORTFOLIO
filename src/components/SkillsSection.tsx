@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Code, Database, BarChart3, Zap, Settings, Monitor, FileText, Globe } from "lucide-react";
+import { Code, Database, BarChart3, Zap, Settings, Monitor, FileText, Globe,  Github } from "lucide-react";
 
 const SkillsSection = () => {
   const techStack = [
@@ -12,7 +12,7 @@ const SkillsSection = () => {
     { name: "VS Code", category: "Tools", icon: Settings },
     { name: "Jupyter Notebook", category: "Tools", icon: FileText },
     { name: "Google Colab", category: "Tools", icon: Monitor },
-    { name: "Git", category: "Tools", icon: Code },
+    { name: "Git", category: "Tools", icon:  Github },
     { name: "Tableau", category: "Visualization", icon: BarChart3 }
   ];
 
