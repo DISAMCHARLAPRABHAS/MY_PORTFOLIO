@@ -1,14 +1,33 @@
 
 import { Button } from "@/components/ui/button";
 import { Download, Mail, ArrowRight } from "lucide-react";
+import { useState } from "react";
+import Interactive3DScene from "./Interactive3DScene";
 
 const HeroSection = () => {
+  const [show3D, setShow3D] = useState(false);
+
   const handleResumeDownload = () => {
     // Convert Google Drive view link to direct download link
     const driveFileId = "1tK4sBRl0DJy7a-9Yzb2wK_wkEzoWLqbh";
     const downloadUrl = `https://drive.google.com/uc?export=download&id=${driveFileId}`;
     window.open(downloadUrl, '_blank');
   };
+
+  if (show3D) {
+    return (
+      <section className="min-h-screen relative">
+        <Interactive3DScene />
+        <Button
+          onClick={() => setShow3D(false)}
+          className="absolute top-4 right-16 z-20 bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20"
+          size="sm"
+        >
+          Back to 2D
+        </Button>
+      </section>
+    );
+  }
 
   return (
     <section className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-900 dark:via-blue-900 dark:to-purple-900 flex items-center justify-center relative overflow-hidden">
@@ -37,7 +56,6 @@ const HeroSection = () => {
             </h1>
             <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 font-medium mb-4">
               Turning Ideas into AI | Living Data | Breathing Innovation
-              
             </h2>
             <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
               Turning innovative ideas into powerful digital products that make a difference.
@@ -73,6 +91,16 @@ const HeroSection = () => {
             >
               My Projects
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+            </Button>
+          </div>
+
+          {/* 3D Experience Button */}
+          <div className="mt-8 animate-fade-in" style={{animationDelay: '0.6s'}}>
+            <Button
+              onClick={() => setShow3D(true)}
+              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-medium px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            >
+              🚀 Experience 3D Portfolio
             </Button>
           </div>
 
