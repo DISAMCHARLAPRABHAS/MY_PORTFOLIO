@@ -10,12 +10,14 @@ import Footer from "@/components/Footer";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import Dynamic3DBackground from "@/components/3d/Dynamic3DBackground";
 import SectionTransition3D from "@/components/3d/SectionTransition3D";
+import ChatBot from "@/components/ChatBot";
 
 const Index = () => {
   return (
     <div className="min-h-screen relative">
       <Dynamic3DBackground />
       <ThemeToggle />
+      <ChatBot />
       <HeroSection />
       <SectionTransition3D />
       <AboutSection />
